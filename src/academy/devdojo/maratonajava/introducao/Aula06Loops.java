@@ -13,12 +13,22 @@ public class Aula06Loops {
             System.out.println(i);
         }
 
-        for(int p = 0; p <= 1000000; p++){
-            if(p % 2 == 0){
-                System.out.println(p);
-            } else {
-                System.out.println("impar");
+//        for(int p = 0; p <= 1000000; p++){
+//            if(p % 2 == 0){
+//                System.out.println(p);
+//            } else {
+//                System.out.println("impar");
+//            }
+//        }
+
+        // break;
+        int maxValue = 50;
+        for(int t = 0; t <= maxValue; t++){
+            System.out.println("Imprimiu: "+t);
+            if(t == 25){
+                break;
             }
+            System.out.println("Imprimiu: "+t);
         }
     }
 }
