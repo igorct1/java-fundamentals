@@ -4,6 +4,7 @@ public class Aula05EstruturasCondicionais02 {
     public static void main(String[] args) {
         byte day = 5;
 
+        // char, int, byte, short, enum, String
         switch(day){
             case 1:
                 System.out.println("Domingo");
@@ -25,6 +26,9 @@ public class Aula05EstruturasCondicionais02 {
                 break;
             case 7:
                 System.out.println("Sábado");
+                break;
+            default:
+                System.out.println("Insira um valor válido!");
                 break;
         }
     }
