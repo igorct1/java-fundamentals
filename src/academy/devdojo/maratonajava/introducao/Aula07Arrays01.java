@@ -17,8 +17,12 @@ public class Aula07Arrays01 {
             System.out.println(names[i]);
         }
 
-        for(String name : names){
-            System.out.println(name);
+        int[] nums = {10, 2, 30, 23, 11};
+        int total = 0;
+
+        for(int num : nums){
+            total+= num;
         }
+        System.out.println(total);
     }
 }
