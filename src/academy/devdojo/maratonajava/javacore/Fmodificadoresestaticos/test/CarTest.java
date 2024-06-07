@@ -8,9 +8,8 @@ public class CarTest {
         Car c2 = new Car("Benz", "Mercedes", 290);
         Car c3 = new Car("Spider", "Ferrari", 300);
 
-        System.out.println(Car.speedLimit);
-        Car.speedLimit = 180;
-        System.out.println(Car.speedLimit);
+        Car.setSpeedLimit(230);
+        System.out.println(Car.getSpeedLimit());
 
         c1.print();
         c2.print();
