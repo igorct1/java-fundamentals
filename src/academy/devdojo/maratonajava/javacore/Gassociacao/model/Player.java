@@ -4,13 +4,15 @@ public class Player {
     private String name;
     private Team team;
 
-    public void print(){
+    public void print() {
         System.out.println(this.name);
-        if(team != null){
-            System.out.println(team.getName());
-        }
+
+        if (team == null) return;
+
+        System.out.println(team.getName());
 
     }
+
     public Player(String name) {
         this.name = name;
     }
