@@ -5,10 +5,23 @@ public class Person {
     protected String cpf;
     protected Address address;
 
+    static{
+        System.out.println("dentro do bloco e de pessoa");
+    }
+
+    {
+        System.out.println("dentro do bloco n-e de pessao");
+    }
+
+    {
+        System.out.println("dentro do bloco n-e de pessao 2");
+    }
+
     public Person(String name, String cpf, Address address) {
         this.name = name;
         this.cpf = cpf;
         this.address = address;
+        System.out.println("dentro do construtor de pessoa");
     }
 
     public void print() {

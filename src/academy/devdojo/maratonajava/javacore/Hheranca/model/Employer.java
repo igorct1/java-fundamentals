@@ -3,9 +3,22 @@ package academy.devdojo.maratonajava.javacore.Hheranca.model;
 public class Employer extends Person {
     private double salary;
 
+    static {
+        System.out.println("dentro do bloco e de funcionario");
+    }
+
+    {
+        System.out.println("dentro do bloco n-e de funcionario");
+    }
+
+    {
+        System.out.println("dentro do bloco n-e de funcionario 2");
+    }
+
     public Employer(String name, String cpf, Address address, double salary) {
         super(name, cpf, address);
         this.salary = salary;
+        System.out.println("dentro do construtor de funcionario");
     }
 
     @Override
