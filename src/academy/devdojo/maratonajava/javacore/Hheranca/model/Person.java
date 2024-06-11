@@ -1,16 +1,23 @@
 package academy.devdojo.maratonajava.javacore.Hheranca.model;
 
 public class Person {
-    private String name;
-    private String cpf;
-    private Address address;
+    protected String name;
+    protected String cpf;
+    protected Address address;
 
-    public void print(){
+    public Person(String name, String cpf, Address address) {
+        this.name = name;
+        this.cpf = cpf;
+        this.address = address;
+    }
+
+    public void print() {
         System.out.println(this.name);
         System.out.println(this.cpf);
         System.out.println(this.address.getStreet());
         System.out.println(this.address.getZipcode());
     }
+
     public String getName() {
         return name;
     }

@@ -10,17 +10,16 @@ public class InheritanceTest {
         address.setStreet("Rua da Morte");
         address.setZipcode("03363-032");
 
-        Person person = new Person();
-        person.setName("Kaneki");
-        person.setCpf("999-888-777-66");
-        person.setAddress(address);
+        double salary = 20000;
+        Person person = new Person("Kaneki", "999-888-777-66", address);
+        Employer employer = new Employer("Kafka", "Kaiju N.08", address, salary);
 
-        Employer employer = new Employer();
-        employer.setName("Kafka");
-        employer.setCpf("Kaiju no.8");
-        employer.setAddress(address);
-        employer.setSalary(20000);
+        System.out.println("----- Person -----");
+        person.print();
 
+        System.out.println("----- Employer -----");
         employer.print();
+        employer.personReport();
+
     }
 }
