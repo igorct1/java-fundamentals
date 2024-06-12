@@ -1,13 +1,13 @@
 package academy.devdojo.maratonajava.javacore.Kenum.model;
 
 public enum PaymentType {
-    CREDIT("Crédito"){
+    CREDIT("Crédito") {
         @Override
         public double calculateDiscount(double value) {
             return value * 0.05;
         }
     },
-    DEBIT("Débito"){
+    DEBIT("Débito") {
         @Override
         public double calculateDiscount(double value) {
             return value * 0.1;
@@ -20,7 +20,5 @@ public enum PaymentType {
         this.paymentTypeValue = paymentTypeValue;
     }
 
-    public double calculateDiscount(double value){
-        return 0;
-    }
+    public abstract double calculateDiscount(double value);
 }
