@@ -8,6 +8,7 @@ public class Client {
     public String toString() {
         return "Client{" +
                 "name='" + name + '\'' +
+                "clientType='" + type.CLIENT_VALUE + '\'' +
                 ", type=" + type +
                 '}';
     }
