@@ -9,9 +9,11 @@ public class ClientTest {
         Client client = new Client("Igor", ClientType.PESSOA_FISICA, PaymentType.CREDIT);
         Client client2 = new Client("Gon", ClientType.PESSOA_JURIDICA, PaymentType.DEBIT);
 
-        System.out.println(client);
-        System.out.println(client2);
         System.out.println(PaymentType.DEBIT.calculateDiscount(100));
         System.out.println(PaymentType.CREDIT.calculateDiscount(100));
+
+        ClientType pessoaFisica = ClientType.getClientTypeByReportName("Pessoa Fisica");
+
+        System.out.println(pessoaFisica);
     }
 }

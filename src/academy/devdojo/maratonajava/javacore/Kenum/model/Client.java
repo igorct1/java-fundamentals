@@ -20,4 +20,5 @@ public class Client {
         this.type = type;
         this.paymentType = paymentType;
     }
+
 }
