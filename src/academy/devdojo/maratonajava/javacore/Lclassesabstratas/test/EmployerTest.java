@@ -1,7 +1,6 @@
 package academy.devdojo.maratonajava.javacore.Lclassesabstratas.test;
 
 import academy.devdojo.maratonajava.javacore.Lclassesabstratas.model.Developer;
-import academy.devdojo.maratonajava.javacore.Lclassesabstratas.model.Employer;
 import academy.devdojo.maratonajava.javacore.Lclassesabstratas.model.Manager;
 
 public class EmployerTest {

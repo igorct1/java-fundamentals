@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.javacore.Lclassesabstratas.model;
 
-public abstract class Employer {
+public abstract class Employer extends Person{
     protected String name;
     protected double salary;
 
@@ -8,6 +8,11 @@ public abstract class Employer {
         this.name = name;
         this.salary = salary;
         calculateBonus();
+    }
+
+    @Override
+    public void print() {
+        System.out.println(this.name);
     }
 
     public abstract void calculateBonus();
