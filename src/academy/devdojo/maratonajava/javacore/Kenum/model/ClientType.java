@@ -8,6 +8,7 @@ public enum ClientType {
 
     ClientType(int clientValue) {
         this.CLIENT_VALUE = clientValue;
+
     }
 
     public int getCLIENT_VALUE() {
