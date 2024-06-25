@@ -11,7 +11,7 @@ public class WrapperTest01 {
         char charP = 'A';
         boolean booleanP = true;
 
-        Integer intW = 1;
+        Integer intW = 1; // autoboxing
         Short shortW = 1;
         Byte byteW = 1;
         Long longW = 10L;
@@ -19,5 +19,11 @@ public class WrapperTest01 {
         Float floatW = 10F;
         Character charW = 'A';
         Boolean boolW = true;
+
+        int i = intW; // unboxing
+
+        System.out.println(Character.isDigit('9'));
+        System.out.println(Character.isDigit('a'));
+        System.out.println(Character.isUpperCase('A'));
     }
 }
