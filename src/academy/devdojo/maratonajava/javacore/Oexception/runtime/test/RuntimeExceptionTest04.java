@@ -19,6 +19,16 @@ public class RuntimeExceptionTest04 {
         } catch (RuntimeException e) {
             System.out.println("Dentro de RuntimeException");
         }
+
+        try {
+            maybeItThrowException();
+        } catch (SQLException | FileNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
+    private static void maybeItThrowException() throws SQLException, FileNotFoundException {
+    }
 }
+
+
