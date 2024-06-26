@@ -21,7 +21,6 @@ public class WrapperTest01 {
         Boolean boolW = true;
 
         int i = intW; // unboxing
-
         System.out.println(Character.isDigit('9'));
         System.out.println(Character.isDigit('a'));
         System.out.println(Character.isUpperCase('A'));
