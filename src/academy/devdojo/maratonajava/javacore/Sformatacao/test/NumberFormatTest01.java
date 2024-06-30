@@ -15,10 +15,18 @@ public class NumberFormatTest01 {
         numberFormats[3] = NumberFormat.getInstance(localeBR);
         numberFormats[2] = NumberFormat.getInstance(localeItaly);
 
-        double value = 10_100.2130;
+        double value = 10_000.2130;
 
         for (NumberFormat numberFormat : numberFormats){
+            numberFormat.setMaximumFractionDigits(2);
             System.out.println(numberFormat.format(value));
+        }
+
+        String valueString = "1_000.2130";
+        try{
+            System.out.println(numberFormats[0].parse(valueString));
+        } catch(Exception e){
+            e.printStackTrace();
         }
     }
 }
